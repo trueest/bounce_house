@@ -1,12 +1,3 @@
-/*
-* Name: Hunter Hawkins - U13938229
-* Email: hunterhawkins@usf.edu 
-* Assignment: Project 1
-* This C program will calculate the cost for a bounce house rental using the provided rates for
-* hours, days, and maximum per day. The program will determine if user input is valid and will 
-* quit if the user enters an invalid value.
-*/
-
 // ADDING LIBRARIES
 #include <stdio.h> 
 
