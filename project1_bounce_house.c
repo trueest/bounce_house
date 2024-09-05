@@ -1,3 +1,12 @@
+/*
+* Name: Hunter Hawkins - U13938229
+* Email: hunterhawkins@usf.edu 
+* Assignment: Project 1
+* This C program will calculate the cost for a bounce house rental using the provided rates for
+* hours, days, and maximum per day. The program will determine if user input is valid and will 
+* quit if the user enters an invalid value.
+*/
+
 // ADDING LIBRARIES
 #include <stdio.h> 
 
@@ -14,7 +23,7 @@ int main() {
     //Initializing user variables for calculations.
     int bounceHouse = 0, days = 0, hours = 0, charge = 0;
 
-    printf("Please select from four bounce houses 1, 2, 3, and 4 \n");
+    printf("Please select from four bounce houses: 1, 2, 3, and 4 \n");
     printf("Enter bounce house selection: ");
     scanf("%d", &bounceHouse);
 
@@ -45,7 +54,7 @@ int main() {
             charge += (days * bounce1[3]);
 
             //Checking if hourly rental cost exceeds per day maximum.
-            if (hours * bounce1[2] < bounce1[1]) {
+            if (hours * bounce1[2] < bounce1[3]) {
                 charge += hours * bounce1[2];
             } else {
                 //Per day maximum is added to rental charge.
@@ -74,7 +83,7 @@ int main() {
         if (days >= 1) {
             charge += (days * bounce2[3]);
             
-            if (hours * bounce2[2] < bounce2[1]) {
+            if (hours * bounce2[2] < bounce2[3]) {
                 charge += hours * bounce2[2];
             } else {
                 charge += bounce2[3];
@@ -99,7 +108,7 @@ int main() {
         if (days >= 1) {
             charge += (days * bounce3[3]);
             
-            if (hours * bounce3[2] < bounce3[1]) {
+            if (hours * bounce3[2] < bounce3[3]) {
                 charge += hours * bounce3[2];
             } else {
                 charge += bounce3[3];
@@ -124,7 +133,7 @@ int main() {
         if (days >= 1) {
             charge += (days * bounce4[3]);
             
-            if (hours * bounce4[2] < bounce4[1]) {
+            if (hours * bounce4[2] < bounce4[3]) {
                 charge += hours * bounce4[2];
             } else {
                 charge += bounce4[3];
